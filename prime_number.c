@@ -19,7 +19,11 @@ int main(){
 		
 	for(i=2;i<n;i++){
 			
-	    count++;
+	   if(n%i==0){
+				
+	        count++;
+		       
+	  }
 		
 	}
 	
