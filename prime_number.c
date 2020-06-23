@@ -1,35 +1,33 @@
 #include<stdio.h>
 
-//Asal sayı 2 den kendisine kadar olan sayılardan hiçbirine tam bölünmeyen sayıdır.
-//Kullanıcıdan alınan değer asal mi değil mi?
+//Asal sayÃ½ 2 den kendisine kadar olan sayÃ½lardan hiÃ§birine tam bÃ¶lÃ¼nmeyen sayÃ½dÃ½r.
+//KullanÃ½cÃ½dan alÃ½nan deÃ°er asal mi deÃ°il mi?
 //Is the value taken from the user prime or not?
 //The prime number is the number that is not fully divided into any of the numbers from 2 to it.
 
 int main(){
 	
 	
-	int n;
+    int n;
     int i;
+    int count=0;	
 	
 	printf("Please enter a positive number:");
 	scanf("%d",&n);
 	
 
 		
-		for(i=2;i<n;i++){
+	for(i=2;i<n;i++){
 			
-			if(n%i==0){
-				
-		       printf("Not a prime number.");
-		       
-			}
-			else{
-				
-				printf("Prime number.");
-			}
-		  
-		  break;     
+	    count++;
 		
+	}
+	
+	if(count==0){
+		printf("Prime number");
+	}
+	else{
+		printf("Not a prime number.");
 	}
 	
 	
